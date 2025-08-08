@@ -3,7 +3,7 @@ Programa bolsa futuro digital-Softex
 ## Sobre o programa BFD
 O programa Bolsa Futuro Digital (BFD) da Softex é uma iniciativa voltada para a especialização em Python, oferecendo capacitação e desenvolvimento de habilidades em programação. O objetivo do programa é preparar profissionais para o mercado de tecnologia, promovendo inclusão digital e ampliando oportunidades de carreira na área de desenvolvimento de software.
 
-##Comandos do git 
+## Comandos do git 
 
 ## Configura o nome do usuário
 $ git config --global user.name "Isandra Micaelle"
