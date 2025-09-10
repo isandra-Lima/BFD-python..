@@ -80,3 +80,51 @@ except IdadeInvalidaError as e:
     print(e)
 finally:
     print('Encerrando programa')
+
+
+# ==== Exercício 7 ====
+# Tratamento de múltiplas exceções
+# Peça dois números e divida. Trate ValueError e ZeroDivisionError
+try:
+    num1 = int(input('Digite um numero inteiro: '))
+    num2 = int(input('Digite outro numero inteiro: '))
+    resultado = num1 / num2
+    print(f'O resultado de {num1} / {num2} é: {resultado}')
+except ValueError:
+    print('Você não digitou um número inteiro')
+except ZeroDivisionError:
+    print('Divisão por zero não é permitida')
+finally:
+    print('Encerrando programa')
+
+# ==== Exercício 8 ====
+# Verificar se número é par ou ímpar com tratamento de erro
+try: 
+    num1 = int(input('Digite um numero inteiro: ')) 
+except ValueError:
+     print('Você não digitou um número inteiro')
+else :
+     print(f'O número {num1} é par') if num1 % 2 == 0 else print(f'O número {num1} é ímpar')
+finally:
+    print('Encerrando programa')
+
+# ==== Exercício 9 ====
+# Simulando saque bancário com exceção personalizada
+
+class SaldoInsuficienteError(Exception):
+    pass
+def sacar(saldo,valor):
+    if valor > saldo:
+        raise SaldoInsuficienteError('Saldo insuficiente para saque')
+    return saldo - valor
+try:
+    saldo_atual = 1000
+    valor_saque = float(input('Digite o valor para saque: '))
+    novo_saldo = sacar(saldo_atual, valor_saque)
+    print(f'Saque realizado com sucesso. Novo saldo: {novo_saldo}')
+except SaldoInsuficienteError as e:
+    print(F'ERROR:{e}')
+finally:
+    print('Encerrando programa')
+    
+
