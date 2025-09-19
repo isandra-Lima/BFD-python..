@@ -1,5 +1,5 @@
 # ==========================
-# Exercícios - Encapsulamento - sala
+# POO- Encapsulamento 
 # ==========================
 
 # RESUMO: Encapsulamento
