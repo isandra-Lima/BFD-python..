@@ -43,3 +43,5 @@ select a.id, a.nome, a.nota1, a.nota2, t.id
         """)
 for linha in  cursor.fetchall():
     print(f"id Aluno: {linha[0]} - Nome: {linha[1]} - Nota1: {linha[2]} - Nota2: {linha[3]} - id Turma: {linha[4]}")
+
+conect.close()
